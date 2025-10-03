@@ -1,0 +1,66 @@
+.fak.fa-client-compliance, .fa-kit.fa-client-compliance { --fa: "\e01f"; --fa--fa: "\e01f\e01f"; }
+.fak.fa-collabera-new-logo, .fa-kit.fa-collabera-new-logo { --fa: "\e01b"; --fa--fa: "\e01b\e01b"; }
+.fak.fa-golf, .fa-kit.fa-golf { --fa: "\e011"; --fa--fa: "\e011\e011"; }
+.fak.fa-green-signal, .fa-kit.fa-green-signal { --fa: "\e01d"; --fa--fa: "\e01d\e01d"; }
+.fak.fa-i9-authorisation, .fa-kit.fa-i9-authorisation { --fa: "\e01e"; --fa--fa: "\e01e\e01e"; }
+.fak.fa-ic-ai-summary-doc, .fa-kit.fa-ic-ai-summary-doc { --fa: "\e023"; --fa--fa: "\e023\e023"; }
+.fak.fa-ic-blurb, .fa-kit.fa-ic-blurb { --fa: "\e02d"; --fa--fa: "\e02d\e02d"; }
+.fak.fa-ic-bob, .fa-kit.fa-ic-bob { --fa: "\e029"; --fa--fa: "\e029\e029"; }
+.fak.fa-ic-client, .fa-kit.fa-ic-client { --fa: "\e024"; --fa--fa: "\e024\e024"; }
+.fak.fa-ic-download-ban, .fa-kit.fa-ic-download-ban { --fa: "\e032"; --fa--fa: "\e032\e032"; }
+.fak.fa-ic-flipping-req, .fa-kit.fa-ic-flipping-req { --fa: "\e035"; --fa--fa: "\e035\e035"; }
+.fak.fa-ic-manager-regular, .fa-kit.fa-ic-manager-regular { --fa: "\e033"; --fa--fa: "\e033\e033"; }
+.fak.fa-ic-manager-solid, .fa-kit.fa-ic-manager-solid { --fa: "\e034"; --fa--fa: "\e034\e034"; }
+.fak.fa-ic-new, .fa-kit.fa-ic-new { --fa: "\e02e"; --fa--fa: "\e02e\e02e"; }
+.fak.fa-ic-reassign, .fa-kit.fa-ic-reassign { --fa: "\e031"; --fa--fa: "\e031\e031"; }
+.fak.fa-in-house-verification, .fa-kit.fa-in-house-verification { --fa: "\e020"; --fa--fa: "\e020\e020"; }
+.fak.fa-light-memo-pen, .fa-kit.fa-light-memo-pen { --fa: "\e00c"; --fa--fa: "\e00c\e00c"; }
+.fak.fa-light-plus-circle-arrow-left, .fa-kit.fa-light-plus-circle-arrow-left { --fa: "\e00f"; --fa--fa: "\e00f\e00f"; }
+.fak.fa-light-square-list-gear, .fa-kit.fa-light-square-list-gear { --fa: "\e009"; --fa--fa: "\e009\e009"; }
+.fak.fa-local-client, .fa-kit.fa-local-client { --fa: "\e026"; --fa--fa: "\e026\e026"; }
+.fak.fa-market-intel, .fa-kit.fa-market-intel { --fa: "\e00d"; --fa--fa: "\e00d\e00d"; }
+.fak.fa-non-local-client, .fa-kit.fa-non-local-client { --fa: "\e025"; --fa--fa: "\e025\e025"; }
+.fak.fa-regular-file-circle-arrow-up, .fa-kit.fa-regular-file-circle-arrow-up { --fa: "\e012"; --fa--fa: "\e012\e012"; }
+.fak.fa-regular-gear-slash, .fa-kit.fa-regular-gear-slash { --fa: "\e015"; --fa--fa: "\e015\e015"; }
+.fak.fa-regular-star-user, .fa-kit.fa-regular-star-user { --fa: "\e017"; --fa--fa: "\e017\e017"; }
+.fak.fa-regular-user-circle-check, .fa-kit.fa-regular-user-circle-check { --fa: "\e02f"; --fa--fa: "\e02f\e02f"; }
+.fak.fa-regular-user-circle-xmark, .fa-kit.fa-regular-user-circle-xmark { --fa: "\e02b"; --fa--fa: "\e02b\e02b"; }
+.fak.fa-send-docs, .fa-kit.fa-send-docs { --fa: "\e013"; --fa--fa: "\e013\e013"; }
+.fak.fa-sharp-solid-gear-slash, .fa-kit.fa-sharp-solid-gear-slash { --fa: "\e014"; --fa--fa: "\e014\e014"; }
+.fak.fa-soc, .fa-kit.fa-soc { --fa: "\e01c"; --fa--fa: "\e01c\e01c"; }
+.fak.fa-solid-arrows-spin-circle-user, .fa-kit.fa-solid-arrows-spin-circle-user { --fa: "\e006"; --fa--fa: "\e006\e006"; }
+.fak.fa-solid-building-columns-circle-plus, .fa-kit.fa-solid-building-columns-circle-plus { --fa: "\e028"; --fa--fa: "\e028\e028"; }
+.fak.fa-solid-credit-card-circle-question, .fa-kit.fa-solid-credit-card-circle-question { --fa: "\e027"; --fa--fa: "\e027\e027"; }
+.fak.fa-solid-gear-slash, .fa-kit.fa-solid-gear-slash { --fa: "\e016"; --fa--fa: "\e016\e016"; }
+.fak.fa-solid-lock-circle-user, .fa-kit.fa-solid-lock-circle-user { --fa: "\e007"; --fa--fa: "\e007\e007"; }
+.fak.fa-solid-route-user, .fa-kit.fa-solid-route-user { --fa: "\e022"; --fa--fa: "\e022\e022"; }
+.fak.fa-solid-sitemap-user, .fa-kit.fa-solid-sitemap-user { --fa: "\e019"; --fa--fa: "\e019\e019"; }
+.fak.fa-solid-star-user, .fa-kit.fa-solid-star-user { --fa: "\e018"; --fa--fa: "\e018\e018"; }
+.fak.fa-solid-user-circle-plus, .fa-kit.fa-solid-user-circle-plus { --fa: "\e02c"; --fa--fa: "\e02c\e02c"; }
+.fak.fa-solid-user-tie-circle-arrow-up, .fa-kit.fa-solid-user-tie-circle-arrow-up { --fa: "\e008"; --fa--fa: "\e008\e008"; }
+.fak.fa-solid-user-tie-circle-check, .fa-kit.fa-solid-user-tie-circle-check { --fa: "\e001"; --fa--fa: "\e001\e001"; }
+.fak.fa-timesheet, .fa-kit.fa-timesheet { --fa: "\e010"; --fa--fa: "\e010\e010"; }
+.fak.fa-timesheet-1, .fa-kit.fa-timesheet-1 { --fa: "\e021"; --fa--fa: "\e021\e021"; }
+
+.fak, .fa-kit {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: var(--fa-display, inline-block);
+  font-family: "Font Awesome Kit";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fak::before, .fa-kit::before {
+  content: var(--fa);
+}
+
+@font-face {
+  font-family: "Font Awesome Kit";
+  font-style: normal;
+  font-display: block;
+  src: url("../webfonts/custom-icons.woff2") format("woff2"), url("../webfonts/custom-icons.ttf") format("truetype");
+}

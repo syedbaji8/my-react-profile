@@ -1,0 +1,10 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+}
+
+body {
+  background: transparent linear-gradient(107deg, #B3B4E8 0%, #ED8892 100%) 0% 0% no-repeat padding-box;
+  -webkit-background: transparent linear-gradient(107deg, #B3B4E8 0%, #ED8892 100%) 0% 0% no-repeat padding-box;
+  -moz-background: transparent linear-gradient(107deg, #B3B4E8 0%, #ED8892 100%) 0% 0% no-repeat padding-box;
+}

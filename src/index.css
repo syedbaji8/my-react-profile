@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --theme-bg-color: #444444;
+  --theme-text-color: #bdbdbd;
+  --font-family: "Poppins", sans-serif;
+  --white: #ffffff;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.poppins-thin {
+  font-family: var(--font-family);
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: var(--font-family);
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.dark {
+  background: var(--theme-bg-color);
+  color: var(--theme-text-color);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.timeline-education{
+  --white: #ffffff;
+  --left-part-width: 40%;
+  --right-part-width: 60%;
+}
+
+.timeline-second-style .timeline-item {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding-bottom: 15px;
+}
+.timeline-second-style .left-part {
+  width: var(--left-part-width);
+  display: table-cell;
+  padding-right: 25px;
+  min-height: 100%;
+  text-align: right;
+  vertical-align: top;
+}
+.timeline-second-style .divider {
+  position: absolute;
+  top: 0;
+  left: var(--left-part-width);
+  bottom: 0;
+  width: 1px;
+  background-color: #444;
+}
+.timeline-second-style .divider:before {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-top: 4px;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  margin-left: -8px;
+  border-radius: 10px;
+  background-color: var(--white);
+  opacity: .25;
+  z-index: 0;
+}
+.timeline-second-style .divider:after {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-top: 8px;
+  width: 9px;
+  height: 9px;
+  margin-left: -4px;
+  background-color: #222;
+  border-radius: 5px;
+  border: 2px solid var(--white);
+  z-index: 1;
+}
+.timeline-second-style .right-part {
+  width: var(--right-part-width);
+  display: table-cell;
+  padding-left: 25px;
+  padding-right: 15px;
+  vertical-align: top;
+}
+.skills-info.skills-second-style {
+  margin-bottom: 30px;
+}
+.skills-info.skills-second-style h4 {
+  font-size: 13px;
+  line-height: 1.1em;
+  position: relative;
+  float: left;
+  margin: 0 0 4px;
+}
+.skills-second-style .skill-value {
+  font-size: 11px;
+  line-height: 1.1em;
+  position: relative;
+  float: right;
+  margin: 0 0 4px;
+  color: #aaa;
+}
+.skills-second-style .skill-container {
+  position: relative;
+  display: inline-block;
+  background-color: #222;
+  border: 1px solid var(--white);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 10px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.skills-second-style .skill-container:before {
+  content: '';
+  position: absolute;
+  background-color: var(--white);
+}
+.skills-second-style .skill-container.skill-1 .skill-percentage {
+  width: 95%;
+}
+.skills-second-style .skill-percentage {
+  background-color: lightseagreen;
+  border: 2px solid #222;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  height: 8px;
+  padding: 0;
+}
+.contact-page .box{
+  background-color: #333;
+  border: 1px solid #444;
+  min-height: 150px;
+}
+
