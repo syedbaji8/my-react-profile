@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import ProfileOverview from './components/ProfileOverview'
 import Maindetails from './components/Maindetails';
 import About from './components/About';
@@ -9,7 +9,7 @@ import Navigationdetails from './components/Navigationdetails';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<Home />}>
             <Route path="/" element={<Maindetails />} />
@@ -17,7 +17,7 @@ function App() {
             <Route path="/navigation" element={<Navigationdetails />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
