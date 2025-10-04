@@ -1,7 +1,6 @@
 // import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import imagepaths from "../imagepaths";
-
+import imagepaths from "../imagepaths";
 import { useOutletContext } from "react-router-dom";
 export default function Maindetails() {
     const { profileData: { name, position, aboutDescription, mobile, email, address, education, experience, skillSet, works }, loading, error, Homeref, Aboutref, Experienceref, Portfolioref, Contactref, Skillsref, Adminref } = useOutletContext();
@@ -141,7 +140,7 @@ export default function Maindetails() {
                             works?.map((work, index) => <div key={index} className="w-1/5 px-1">
                                 <div className="w-full">
                                     <Link to={work.hrefLink} target="_blank">
-                                        <img src={work.imageSrcUrl} alt="" className="w-full h-fit" />
+                                        <img src={imagepaths[work.imageSrcUrl]} alt="" className="w-full h-fit" />
                                     </Link>
                                 </div>
                             </div>)

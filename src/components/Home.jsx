@@ -14,8 +14,8 @@ export default function Home() {
     const Contactref = useRef();
     const Skillsref = useRef();
     const Adminref = useRef();
-    
-    const [activeSection, setActiveSection] = useState("home");
+
+    const [activeSection, setActiveSection] = useState("Home");
     // const [pagename, dispatchFn] = useReducer(gotoReducerFn, 'Home');
     // function gotoReducerFn(type, action){
     //     if(type === 'Home'){
@@ -23,7 +23,7 @@ export default function Home() {
     //     }
     // }
     const gotothePage = (navname) => {
-         document.getElementById(navname).scrollIntoView({ behavior: "smooth" })
+        document.getElementById(navname).scrollIntoView({ behavior: "smooth" })
         // const parent = event.target.parentElement;
         // // remove 'active' class from all siblings
         // Array.from(parent.children).forEach(child => {
