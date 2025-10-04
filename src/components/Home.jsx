@@ -109,7 +109,7 @@ export default function Home() {
                 <main className="resume-wrapper w-full h-screen px-10 py-0 flex place-items-center">
                     <section className="resume-column-wrapper w-full h-[calc(100vh-100px)] flex flex-wrap flex-row rounded-4xl dark">
                         <ProfileOverview />
-                        <div className="resume-column-2 resume__details h-full w-[70%]">
+                        <div className="resume-column-2 resume__details h-full w-[68%]">
                             <div className="resume__container w-full px-3 py-0 bg-[#222] rounded-4xl h-full [scrollbar-width:none] [scrollbar-color:gray_transparent] [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-blue-500/60 [&::-webkit-scrollbar-track]:bg-transparent overflow-y-scroll snap-y snap-mandatory">
                                 <Outlet context={
                                     {
@@ -127,7 +127,7 @@ export default function Home() {
                                 } />
                             </div>
                         </div>
-                        <div className="resume-column-3 resume__navigation h-full w-[10%] py-8 px-0 text-center">
+                        <div className="resume-column-3 resume__navigation h-full w-[12%] py-8 px-0 text-center flex flex-wrap items-center justify-center">
                             {/* <Link to={'/about'}>About</Link> */}
                             <Navigationdetails gotothePage={gotothePage} activeSection={activeSection} />
                         </div>
