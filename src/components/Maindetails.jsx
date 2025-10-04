@@ -1,14 +1,14 @@
-import { } from "react";
+// import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import imagepaths from "../imagepaths";
+// import imagepaths from "../imagepaths";
 
 import { useOutletContext } from "react-router-dom";
 export default function Maindetails() {
-    const { profileData: { name, position, aboutDescription, mobile, email, address, education, experience, skillSet }, loading, error, Homeref, Aboutref, Experienceref, Portfolioref, Contactref, Skillsref, Adminref } = useOutletContext();
+    const { profileData: { name, position, aboutDescription, mobile, email, address, education, experience, skillSet, works }, loading, error, Homeref, Aboutref, Experienceref, Portfolioref, Contactref, Skillsref, Adminref } = useOutletContext();
 
     return (
         <>
-            <article className="first-page w-full h-full flex place-items-center justify-center py-10" ref={Homeref}>
+            <article id="Home" className="first-page w-full h-full flex place-items-center justify-center py-10 snap-start" ref={Homeref}>
                 {loading && <p className="text-blue-500">Loading...</p>}
                 {error && <p className="text-red-500">Error: {error}</p>}
                 {
@@ -20,7 +20,7 @@ export default function Maindetails() {
                     </div>
                 }
             </article>
-            <article className="second-page w-full h-full flex place-items-start justify-center py-10" ref={Aboutref}>
+            <article id="About" className="second-page w-full h-full flex place-items-start justify-center py-10 snap-start" ref={Aboutref}>
                 <div className="w-full flex flex-row flex-wrap px-8">
                     <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">About Me</h2>
                     <p className="p-0 mb-2 text-md">
@@ -65,7 +65,7 @@ export default function Maindetails() {
                     </div>
                 </div>
             </article>
-            <article className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10" ref={Experienceref}>
+            <article id="Experience" className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10 snap-start" ref={Experienceref}>
                 <div className="w-full flex flex-row flex-wrap px-8">
                     <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">My Experience</h2>
                     {/* <!-- Left Column --> */}
@@ -93,7 +93,7 @@ export default function Maindetails() {
                     </div>
                 </div>
             </article>
-            <article className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10" ref={Skillsref}>
+            <article id="Skills" className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10 snap-start" ref={Skillsref}>
                 <div className="w-full flex flex-row flex-wrap px-8">
                     <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">My Skills</h2>
                     {/* <!-- Right Column --> */}
@@ -133,59 +133,97 @@ export default function Maindetails() {
                     </div>
                 </div>
             </article>
-            <article className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10 overflow-hidden" ref={Portfolioref}>
-                <div className="w-full flex flex-row flex-wrap px-8">
+            <article id="Works" className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10 overflow-hidden snap-start" ref={Portfolioref}>
+                <div className="w-full flex flex-row flex-wrap px-8 h-full overflow-hidden">
                     <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">My Works</h2>
                     <div className="w-full flex flex-row flex-wrap column1">
-                        <div className="w-1/5 px-1">
-                            <div className="w-full">
-                                <Link to={'https://www.ammaphysiotherapy.in/'} target="_blank">
-                                    <img src={imagepaths.ammaphysiotherapy} alt="" className="w-full h-fit" />
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="w-1/5 px-1">
-                            <div className="w-full">
-                                <Link to={'https://www.ammaphysiotherapy.in/'} target="_blank">
-                                    <img src={imagepaths.myearth} alt="" className="w-full h-fit" />
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="w-1/5 px-1">
-                            <div className="w-full">
-                                <Link to={'https://www.ammaphysiotherapy.in/'} target="_blank">
-                                    <img src={imagepaths.homeclearance} alt="" className="w-full h-fit" />
-                                </Link>
+                        {
+                            works?.map((work, index) => <div key={index} className="w-1/5 px-1">
+                                <div className="w-full">
+                                    <Link to={work.hrefLink} target="_blank">
+                                        <img src={work.imageSrcUrl} alt="" className="w-full h-fit" />
+                                    </Link>
+                                </div>
+                            </div>)
+                        }
 
-                            </div>
-                        </div>
-                        <div className="w-1/5 px-1">
-                            <div className="w-full">
-                                <Link to={'https://www.ammaphysiotherapy.in/'} target="_blank">
-                                    <img src={imagepaths.prathima} alt="" className="w-full h-fit" />
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="w-1/5 px-1">
-                            <div className="w-full">
-                                <Link to={'https://www.ammaphysiotherapy.in/'} target="_blank">
-                                    <img src={imagepaths.livayur} alt="" className="w-full h-fit" />
-                                </Link>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </article>
-            <article className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10" ref={Contactref}>
+            <article id="Contact" className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10 snap-start" ref={Contactref}>
                 <div className="w-full flex flex-row flex-wrap px-8">
                     <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">My Contacts</h2>
                     {/* <!-- Left Column --> */}
-                    <div className="w-full lg:w-1/2 column1 left-column">
-                        <div className="w-full"></div>
-                    </div>
-                    {/* <!-- Right Column --> */}
-                    <div className="w-full lg:w-1/2 column2 right-column">
-                        <div className="w-full"></div>
+                    <div className="w-full lg:w-full column1 left-column contact-page">
+                        <div className="flex flex-col flex-wrap items-start justify-center lg:flex-row lg:justify-center">
+                            {/* Mobile */}
+                            <div className="w-full lg:w-1/3 lg:pl-0">
+                                <div className="w-full  py-4 px-2 flex justify-center mb-4">
+                                    <div className="w-full box">
+                                        <a href="tel:7338324752">
+                                            <p className="m-0 text-center">
+                                                <label className="font-bold">
+                                                    <i className="fa fa-mobile text-[30px]"></i>
+                                                </label>
+                                                <br />
+                                                <br />
+                                                +91 - {mobile}
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Email */}
+                            <div className="w-full lg:w-1/3 lg:pl-0">
+                                <div className="w-full py-4 px-2 flex justify-center mb-4">
+                                    <div className="w-full box">
+                                        <a href="mailto:syedbaji8@gmail.com">
+                                            <p className="m-0 text-center">
+                                                <label className="font-bold">
+                                                    <i className="fa fa-envelope text-[30px]"></i>
+                                                </label>
+                                                <br />
+                                                <br />
+                                                {email}
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Address */}
+                            <div className="w-full lg:w-1/3 lg:pl-0">
+                                <div className="w-full py-4 px-2 flex justify-center mb-4">
+                                    <div className="w-full box">
+                                        <p className="m-0 text-center">
+                                            <label className="font-bold">
+                                                <i className="fa fa-map-marker text-[30px]"></i>
+                                            </label>
+                                            <br />
+                                            <br />
+                                            {address}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Freelance availability */}
+                            <div className="w-full lg:pl-0">
+                                <div className="w-fullpy-4 px-2 flex items-center justify-center">
+                                    <div className="w-full box ">
+                                        <p className="m-0 text-center">
+                                            <label className="font-bold">
+                                                <i className="fa fa-check-circle text-[30px]"></i>
+                                            </label>
+                                            <br />
+                                            <br />
+                                            Available for Freelance
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </article>
