@@ -1,9 +1,10 @@
 import { } from "react";
 import { Link } from "react-router-dom";
+import imagepaths from "../imagepaths";
 
 import { useOutletContext } from "react-router-dom";
 export default function Maindetails() {
-    const { profileData: { name, position, aboutDescription, mobile, email, address, education, experience, skillSet }, loading, error, Homeref, Aboutref, Experienceref, Portfolioref, Contactref, Adminref } = useOutletContext();
+    const { profileData: { name, position, aboutDescription, mobile, email, address, education, experience, skillSet }, loading, error, Homeref, Aboutref, Experienceref, Portfolioref, Contactref, Skillsref, Adminref } = useOutletContext();
 
     return (
         <>
@@ -66,9 +67,9 @@ export default function Maindetails() {
             </article>
             <article className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10" ref={Experienceref}>
                 <div className="w-full flex flex-row flex-wrap px-8">
-                    <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">My Experience & Skills</h2>
+                    <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">My Experience</h2>
                     {/* <!-- Left Column --> */}
-                    <div className="w-full lg:w-[60%] column1 left-column">
+                    <div className="w-full lg:w-[100%] column1 left-column">
                         <div className="w-full timeline-second-style timeline-education">
                             {
                                 experience?.length > 0 ? experience.map((item, index) => {
@@ -90,8 +91,13 @@ export default function Maindetails() {
                             }
                         </div>
                     </div>
+                </div>
+            </article>
+            <article className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10" ref={Skillsref}>
+                <div className="w-full flex flex-row flex-wrap px-8">
+                    <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">My Skills</h2>
                     {/* <!-- Right Column --> */}
-                    <div className="w-full lg:w-[40%] column2 right-column">
+                    <div className="w-full lg:w-[100%] column2 right-column">
                         <div className="w-full">
                             {
                                 skillSet?.length > 0 ? skillSet.map((item, index) => {
@@ -127,16 +133,46 @@ export default function Maindetails() {
                     </div>
                 </div>
             </article>
-            <article className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10" ref={Portfolioref}>
+            <article className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10 overflow-hidden" ref={Portfolioref}>
                 <div className="w-full flex flex-row flex-wrap px-8">
                     <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">My Works</h2>
-                    {/* <!-- Left Column --> */}
-                    <div className="w-full lg:w-1/2 column1 left-column">
-                        <div className="w-full"></div>
-                    </div>
-                    {/* <!-- Right Column --> */}
-                    <div className="w-full lg:w-1/2 column2 right-column">
-                        <div className="w-full"></div>
+                    <div className="w-full flex flex-row flex-wrap column1">
+                        <div className="w-1/5 px-1">
+                            <div className="w-full">
+                                <Link to={'https://www.ammaphysiotherapy.in/'} target="_blank">
+                                    <img src={imagepaths.ammaphysiotherapy} alt="" className="w-full h-fit" />
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="w-1/5 px-1">
+                            <div className="w-full">
+                                <Link to={'https://www.ammaphysiotherapy.in/'} target="_blank">
+                                    <img src={imagepaths.myearth} alt="" className="w-full h-fit" />
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="w-1/5 px-1">
+                            <div className="w-full">
+                                <Link to={'https://www.ammaphysiotherapy.in/'} target="_blank">
+                                    <img src={imagepaths.homeclearance} alt="" className="w-full h-fit" />
+                                </Link>
+
+                            </div>
+                        </div>
+                        <div className="w-1/5 px-1">
+                            <div className="w-full">
+                                <Link to={'https://www.ammaphysiotherapy.in/'} target="_blank">
+                                    <img src={imagepaths.prathima} alt="" className="w-full h-fit" />
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="w-1/5 px-1">
+                            <div className="w-full">
+                                <Link to={'https://www.ammaphysiotherapy.in/'} target="_blank">
+                                    <img src={imagepaths.livayur} alt="" className="w-full h-fit" />
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </article>

@@ -1,7 +1,19 @@
-import propic from './assets/images/pro-1.JPG';
+import propic from './assets/images/ShaikBaji-min.png';
+import ammaphysiotherapy from './assets/images/ammaphysiotherapy.png';
+import homeclearance from './assets/images/home-clearance-premium.jpg';
+import livayur from './assets/images/livayur.png';
+import myearth from './assets/images/myearth.png';
+import prathima from './assets/images/prathima.png';
+import nabler from './assets/images/nabler.png';
 
 const imagepaths = {
-    propic
+    propic,
+    ammaphysiotherapy,
+    homeclearance,
+    livayur,
+    myearth,
+    prathima,
+    nabler,
 }
 
 export default imagepaths;

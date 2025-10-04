@@ -12,6 +12,7 @@ export default function Home() {
     const Experienceref = useRef();
     const Portfolioref = useRef();
     const Contactref = useRef();
+    const Skillsref = useRef();
     const Adminref = useRef();
     // const [pagename, dispatchFn] = useReducer(gotoReducerFn, 'Home');
     // function gotoReducerFn(type, action){
@@ -24,13 +25,16 @@ export default function Home() {
             case 'Home':
                 Homeref.current?.scrollIntoView({ behavior: "smooth" });
                 break;
-            case 'About':
+            case 'About me':
                 Aboutref.current?.scrollIntoView({ behavior: "smooth" });
                 break;
             case 'Experience':
                 Experienceref.current?.scrollIntoView({ behavior: "smooth" });
                 break;
-            case 'Portfolio':
+            case 'Skill set':
+                Skillsref.current?.scrollIntoView({ behavior: "smooth" });
+                break;
+            case 'My Works':
                 Portfolioref.current?.scrollIntoView({ behavior: "smooth" });
                 break;
             case 'Contact':
@@ -85,7 +89,8 @@ export default function Home() {
                                         Experienceref,
                                         Portfolioref,
                                         Contactref,
-                                        Adminref
+                                        Adminref,
+                                        Skillsref
                                     }
                                 } />
                             </div>
