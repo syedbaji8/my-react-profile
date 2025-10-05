@@ -20,18 +20,20 @@ export default function Skills() {
                                                 <div className="col-lg-12 p-0 mb-4">
                                                     <h3>{groupTitle}</h3>
                                                 </div>
-                                                <div className="skills-info skills-second-style">
+                                                <div className="skills-info skills-second-style grid grid-cols-2 gap-x-14">
                                                     {
                                                         skills.length > 0 ? skills.map((skillitem, index) => {
                                                             const { name, percentage } = skillitem;
                                                             return (
                                                                 <>
-                                                                    <div key={index} className="skill clearfix">
-                                                                        <h4>{name}</h4>
-                                                                        <div className="skill-value">{percentage}%</div>
-                                                                    </div>
-                                                                    <div className="skill-container skill-1">
-                                                                        <div className="skill-percentage" style={{ 'width': `${percentage}%` }}></div>
+                                                                    <div className="single-skill-wrap w-full">
+                                                                        <div key={index} className="skill clearfix">
+                                                                            <h4>{name}</h4>
+                                                                            <div className="skill-value">{percentage}%</div>
+                                                                        </div>
+                                                                        <div className="skill-container skill-1">
+                                                                            <div className="skill-percentage" style={{ 'width': `${percentage}%` }}></div>
+                                                                        </div>
                                                                     </div>
                                                                 </>
                                                             )
