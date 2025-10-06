@@ -5,8 +5,8 @@ export default function About() {
     return (
         <>
             <article id="About" className="second-page w-full lg:h-full flex place-items-start justify-center py-10 lg:snap-start mb-10" ref={Aboutref}>
-                <div className="w-full flex flex-row flex-wrap px-8">
-                    <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">About Me</h2>
+                <div className="w-full flex flex-row flex-wrap px-2 lg:px-8">
+                    <h2 className="text-2xl font-medium w-full border-b border-white/15 pb-2 mb-4">About Me</h2>
                     <p className="p-0 mb-2 text-md">
                         {aboutDescription}
                     </p>
@@ -24,14 +24,14 @@ export default function About() {
                             <p className="font-semibold">{address}</p>
                         </div>
                     </div>
-                    <h4 className="text-xl font-bold w-full mt-5 mb-8">My Education</h4>
+                    <h4 className="text-xl font-bold w-full mt-5 mb-3 lg:mb-8">My Education</h4>
                     <div className="w-full flex flex-row flex-wrap align-items-start justify-content-between timeline-education timeline-second-style">
                         <div className="w-full p-0">
                             {
                                 education?.length > 0 ? education.map((item, index) => {
                                     const { dateTo, college, course, where } = item;
                                     return (
-                                        <div key={index} className="timeline-item clearfix grid grid-cols-1 lg:grid-cols-[40%_60%] gap-10 justify-left lg:justify-between">
+                                        <div key={index} className="timeline-item clearfix grid grid-cols-1 lg:grid-cols-[40%_60%] gap-x-10 justify-left lg:justify-between">
                                             <div className="left-part text-left lg:text-right">
                                                 <h5 className="item-period text-xl font-medium text-left lg:text-right">{dateTo}</h5>
                                                 <span className="item-company w-full text-left lg:text-right">{college}</span>

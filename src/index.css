@@ -92,8 +92,8 @@ body {
 
 .timeline-education {
   --white: #ffffff;
-    --left-part-width: 40%;
-    --right-part-width: 60%;
+  --left-part-width: 40%;
+  --right-part-width: 60%;
 }
 
 .timeline-second-style .timeline-item {
@@ -219,10 +219,16 @@ body {
 .contact-page .box {
   background-color: #333;
   border: 1px solid #444;
-  min-height: 150px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-page .box {
+    min-height: 150px;
+  }
 }
 
 /* .resume__navigation button.active{

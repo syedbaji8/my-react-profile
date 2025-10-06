@@ -7,8 +7,8 @@ export default function Skills() {
                 {loading && <p className="text-blue-500">Loading...</p>}
                 {error && <p className="text-red-500">Error: {error}</p>}
                 {!loading && !error &&
-                    <div className="w-full flex flex-row flex-wrap px-8">
-                        <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">My Skills</h2>
+                    <div className="w-full flex flex-row flex-wrap px-3 lg:px-8">
+                        <h2 className="text-2xl font-medium w-full border-b border-white/15 pb-2 mb-4">My Skills</h2>
                         {/* <!-- Right Column --> */}
                         <div className="w-full lg:w-[100%] column2 right-column">
                             <div className="w-full">
