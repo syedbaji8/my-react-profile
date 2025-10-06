@@ -2,7 +2,7 @@ import imagepaths from "../imagepaths"
 export default function ProfileOverview() {
     return (
         <>
-            <div className="resume-column-1 resume__profile h-full w-[20%]">
+            <div className="resume-column-1 resume__profile h-full w-full lg:w-[20%] hidden lg:block">
                 <div className="w-full px-3 pt-10 pb-10">
                     <div className="person-details mb-3 flex items-center justify-center">
                         <figure className='text-center'>

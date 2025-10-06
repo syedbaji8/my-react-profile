@@ -5,7 +5,7 @@ export default function Works() {
     const { profileData: { works }, loading, error, Portfolioref } = useOutletContext();
     return (
         <>
-            <article id="Works" className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10 overflow-hidden snap-start" ref={Portfolioref}>
+            <article id="Works" className="flex flex-col lg:flex-row flex-wrap lg:h-full place-items-start justify-center py-10 lg:snap-start" ref={Portfolioref}>
                 {loading && <p className="text-blue-500">Loading...</p>}
                 {error && <p className="text-red-500">Error: {error}</p>}
                 {!loading && !error &&

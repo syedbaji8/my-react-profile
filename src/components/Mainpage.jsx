@@ -1,10 +1,13 @@
+// import { useReducer, useState } from "react";
+import Navigationdetails from "./Navigationdetails";
 import { useOutletContext } from "react-router-dom";
 // import imagepaths from "../imagepaths";
 export default function Mainpage() {
+
     const { profileData: { name, position }, loading, error, Homeref } = useOutletContext();
     return (
         <>
-            <article id="Home" className="first-page w-full h-full flex place-items-center justify-center py-10 snap-start" ref={Homeref}>
+            <article id="Home" className="first-page relative w-full h-screen lg:h-full flex place-items-center justify-center py-10 snap-start" ref={Homeref}>
                 {loading && <p className="text-blue-500">Loading...</p>}
                 {error && <p className="text-red-500">Error: {error}</p>}
                 {

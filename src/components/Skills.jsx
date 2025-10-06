@@ -3,7 +3,7 @@ export default function Skills() {
     const { profileData: { skillSet }, loading, error, Skillsref } = useOutletContext();
     return (
         <>
-            <article id="Skills" className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10 snap-start" ref={Skillsref}>
+            <article id="Skills" className="flex flex-col lg:flex-row flex-wrap lg:h-full place-items-start justify-center py-10 lg:snap-start" ref={Skillsref}>
                 {loading && <p className="text-blue-500">Loading...</p>}
                 {error && <p className="text-red-500">Error: {error}</p>}
                 {!loading && !error &&
@@ -20,7 +20,7 @@ export default function Skills() {
                                                 <div className="col-lg-12 p-0 mb-4">
                                                     <h3>{groupTitle}</h3>
                                                 </div>
-                                                <div className="skills-info skills-second-style grid grid-cols-2 gap-x-14">
+                                                <div className="skills-info skills-second-style grid lg:grid-cols-2 gap-x-14">
                                                     {
                                                         skills.length > 0 ? skills.map((skillitem, index) => {
                                                             const { name, percentage } = skillitem;

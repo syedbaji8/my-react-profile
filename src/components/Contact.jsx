@@ -6,7 +6,7 @@ export default function Contact() {
         <>
             {loading && <p className="text-blue-500">Loading...</p>}
             {error && <p className="text-red-500">Error: {error}</p>}
-            <article id="Contact" className="flex flex-col lg:flex-row flex-wrap h-full place-items-start justify-center py-10 snap-start" ref={Contactref}>
+            <article id="Contact" className="flex flex-col lg:flex-row flex-wrap lg:h-full place-items-start justify-center py-10 lg:snap-start" ref={Contactref}>
                 {!loading && !error &&
                     <div className="w-full flex flex-row flex-wrap px-8">
                         <h2 className="text-3xl font-semibold w-full border-b border-white/15 pb-2 mb-4">My Contacts</h2>
