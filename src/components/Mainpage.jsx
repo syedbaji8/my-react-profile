@@ -1,10 +1,10 @@
 // import { useReducer, useState } from "react";
 import Navigationdetails from "./Navigationdetails";
-import { useOutletContext } from "react-router-dom";
+// import { useOutletContext } from "react-router-dom";
 // import imagepaths from "../imagepaths";
-export default function Mainpage() {
-
-    const { profileData: { name, position }, loading, error, Homeref } = useOutletContext();
+export default function Mainpage({ info: { profileData: { name, position } = {}, loading, error, Homeref } = {} }) {
+    // console.log(profileData)
+    // const { profileData: { name, position }, loading, error, Homeref } = useOutletContext();
     return (
         <>
             <article id="Home" className="first-page relative w-full h-screen lg:h-full flex place-items-center justify-center py-10 snap-start" ref={Homeref}>

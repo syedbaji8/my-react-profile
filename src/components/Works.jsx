@@ -1,8 +1,7 @@
-import { useOutletContext, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import imagepaths from "../imagepaths";
 
-export default function Works() {
-    const { profileData: { works }, loading, error, Portfolioref } = useOutletContext();
+export default function Works({info: {profileData: { works }, loading, error, Portfolioref}}) {
     return (
         <>
             <article id="Works" className="flex flex-col lg:flex-row lg:h-full flex-wrap place-items-start justify-center py-10 lg:snap-start" ref={Portfolioref}>

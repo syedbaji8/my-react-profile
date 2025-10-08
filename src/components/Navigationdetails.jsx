@@ -15,9 +15,9 @@ export default function Navigationdetails({ gotothePage, activeSection }) {
             {
                 navarray.map((navitem) =>
                     <button
-                        className={`border rounded-full px-4 py-2 whitespace-nowrap text-sm mb-6 cursor-pointer shadow-[2px_4px_0px_black] ${activeSection === navitem.pagename ? "bg-[#222] text-white" : "bg-[#333] text-white"} flex items-center`}
+                        className={`border rounded-full max-h-11 px-4 py-2 text-sm mb-0 cursor-pointer shadow-[2px_4px_0px_black] ${activeSection === navitem.pagename ? "bg-[#222] text-white" : "bg-[#333] text-white"}`}
                         onClick={() => gotothePage(navitem.pagename)}>
-                        <i className={navitem.icon}></i>
+                        <i className={`${navitem.icon} mr-2`}></i>
                         {navitem.pagename}
                     </button>)
             }

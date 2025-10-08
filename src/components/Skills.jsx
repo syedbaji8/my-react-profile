@@ -1,6 +1,5 @@
-import { useOutletContext } from "react-router-dom";
-export default function Skills() {
-    const { profileData: { skillSet }, loading, error, Skillsref } = useOutletContext();
+// import { useOutletContext } from "react-router-dom";
+export default function Skills({info: {profileData: { skillSet }, loading, error, Skillsref}}) {
     return (
         <>
             <article id="Skills" className="flex flex-col lg:flex-row flex-wrap lg:h-full place-items-start justify-center py-10 lg:snap-start" ref={Skillsref}>

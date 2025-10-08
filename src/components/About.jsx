@@ -1,7 +1,5 @@
-import { useOutletContext } from "react-router-dom";
-
-export default function About() {
-    const { profileData: { aboutDescription, mobile, email, address, education }, Aboutref } = useOutletContext();
+// import { useOutletContext } from "react-router-dom";
+export default function About({info: {profileData: { aboutDescription, mobile, email, address, education }, Aboutref}}) {
     return (
         <>
             <article id="About" className="second-page w-full lg:h-full flex place-items-start justify-center py-10 lg:snap-start mb-10" ref={Aboutref}>

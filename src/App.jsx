@@ -11,11 +11,7 @@ function App() {
     <>
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
-          <Route path='/' element={<Home />}>
-            <Route path="/" element={<Pagewrapper />} />
-            {/* <Route path="/about" element={<About />} />
-            <Route path="/navigation" element={<Navigationdetails />} /> */}
-          </Route>
+          <Route path='/' element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>

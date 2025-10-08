@@ -1,7 +1,6 @@
-import { useOutletContext } from "react-router-dom";
+// import { useOutletContext } from "react-router-dom";
 // import imagepaths from "../imagepaths";
-export default function Contact() {
-    const { profileData: { mobile, email, address }, loading, error, Contactref } = useOutletContext();
+export default function Contact({info: {profileData: { mobile, email, address }, loading, error, Contactref}}) {
     return (
         <>
             {loading && <p className="text-blue-500">Loading...</p>}

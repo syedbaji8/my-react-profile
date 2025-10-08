@@ -1,7 +1,5 @@
-import { useOutletContext } from "react-router-dom";
-
-export default function Xperience() {
-    const { profileData: { experience }, loading, error, Experienceref } = useOutletContext();
+// import { useOutletContext } from "react-router-dom";
+export default function Xperience({info: {profileData: { experience }, loading, error, Experienceref}}) {
     return (
         <>
             <article id="Xperience" className="flex flex-col lg:flex-row flex-wrap lg:h-full place-items-start justify-center py-10 lg:snap-start" ref={Experienceref}>
